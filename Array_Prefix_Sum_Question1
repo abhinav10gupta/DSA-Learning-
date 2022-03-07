@@ -74,3 +74,39 @@ public class HelloWorld{
 
 
 }
+
+
+
+public class Solution {
+    public int solve(int[] A) {
+        int count = 0;
+        int len = A.length;
+        for(int i =0; i< len; i++){
+
+            int sOdd = 0;
+            int sEven = 0;
+            for(int j = 0 ;j < i ; j ++){
+                if(j % 2 == 0){
+                    sEven= A[j]+sEven;
+                }
+                else{
+                    sOdd = A[j]+sOdd;
+                }
+            }
+            for(int j = i+1 ;j < len ; j ++){
+                if(j % 2 == 0){
+                    sOdd = A[j]+sOdd;
+                }
+                else{
+                    sEven = A[j]+sEven;
+                }
+
+            }
+             if(sEven == sOdd){
+                    count++;
+                }
+
+        }
+        return count;
+    }
+}
