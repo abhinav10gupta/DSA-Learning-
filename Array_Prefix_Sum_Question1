@@ -52,3 +52,25 @@ Removing arr[0] from the given array modifies arr[] to { 1, 1 } such that arr[0]
 Removing arr[1] from the given array modifies arr[] to { 1, 1 } such that arr[0] = arr[1] 
 Removing arr[2] from the given array modifies arr[] to { 1, 1 } such that arr[0] = arr[1] 
 Therefore, the required output is 3.
+
+
+
+import java.util.List;
+import java.util.Arrays;
+public class HelloWorld{
+
+     public static void main(String[] args) {
+            int[] arr = {1,2,3,6,3,2,1};
+            System.out.println(solve(arr));
+
+        }
+
+        public static int solve(int[] A) 
+        {
+
+
+
+        }
+
+
+}
